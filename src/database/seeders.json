@@ -1,0 +1,72 @@
+{
+  "regioes": [
+    {
+      "id": 1,
+      "UF": "João Pessoa"
+    },
+    {
+      "id": 2,
+      "UF": "Campina Grande"
+    },
+    {
+      "id": 3,
+      "UF": "Guarabira"
+    }
+  ],
+  
+  "especies": [
+    {
+      "tamanho": 10,
+      "comportamento": "Pode chegar a uma população de quatro mil a seis mil habitantes por colmeia,produz cerca de dois a quatro litros de mel por ano" ,
+      "nome_cientifico":"Melipona scutellaris",
+      "cor":" A Uruçu possui corpo robusto (marrom e preto), vértice marrom-amarelado, com pelos abundantes amarelo-ruivos, frequentemente com alguns mais claros, cor de ouro."
+    },
+    {
+      "tamanho":6, 
+      "comportamento": "São uma das menores abelhas do gênero Melipona, por serem um pouco agressivas e produzirem um mel muito saboroso." ,
+      "nome_cientifico":"Melipona asilvai",
+      "cor":"predominantemente preta com marcar amarelas"
+    },
+    {
+      "tamanho": 12,
+      "comportamento":"Abelhas grandes, robustas e ótimas produtoras de mel" ,
+      "nome_cientifico":"Melipona scutellaris" ,
+      "cor": "predominante amarela com marcar pretas" 
+    }
+  ],
+  
+  "meliponarios": [
+    {
+      "nome": "Meliponário Parahyba",
+      "qtd_caixas": 5,
+      "telefone": 988300402,
+      "bairro":"Jardim Veneza",
+      "rua": "Rua Governador Luis de Brito Almeida",
+      "numero": "155",
+      "descricao": "Meliponário para criação de abelhas sem ferrão",
+      "regioes_id": 1
+    },
+
+    { 
+    "nome": "Meliponário Smith",
+    "qtd_caixas": 6,
+    "telefone": 978305689,
+    "bairro": "Bairro dos Ipês",
+    "rua": "Rua João Camilo de Oliveira", 
+    "numero": "122",
+    "descricao": "Meliponário para criação de abelhas sem ferrão",
+    "regioes_id": 2
+  },
+
+    { 
+    "nome": "Meliponário Abelinha",
+    "qtd_caixas": 7,
+    "telefone": 965800124,
+    "bairro": "Bairro das Industrias",
+    "rua": "Avenida Primeiro de Maio", 
+    "numero": "225",
+    "descricao": "Meliponário para criação de abelhas sem ferrão",
+    "regioes_id": 3
+  }
+ ]
+} 

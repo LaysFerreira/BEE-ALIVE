@@ -1,0 +1,86 @@
+@token = {{login.response.body.token}}
+@host = http://localhost:3000
+
+### Create meliponario
+
+POST {{host}}/meliponarios
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+{
+    "nome": "Meliponário Abelha Doce",
+    "qtd_caixas": 5,
+    "telefone": 988300402,
+    "bairro":"Jardim Veneza",
+    "rua": "Rua Governador Luis de Brito Almeida",
+    "numero": "177",
+    "descricao": "Meliponário para criação de abelhas sem ferrão",
+    "regioes_id": 3
+}
+
+### Read meliponario
+
+GET {{host}}/meliponarios
+Authorization: bearer {{token}}
+
+### Update meliponario
+
+PUT {{host}}/meliponarios/3
+Content-Type: application/json
+Authorization: bearer {{token}}
+
+{
+   "nome": "Meliponário Abelha Doce",
+    "qtd_caixas": 7,
+    "telefone": 988300402,
+    "bairro":"Mangabeira",
+    "rua": "Abel Bezerra de Lima",
+    "numero": "177",
+    "descricao": "Meliponário para criação de abelhas sem ferrão",
+    "regioes_id": 3
+}
+
+### Delete meliponario
+
+DELETE {{host}}/meliponarios/4
+Authorization: bearer {{token}}
+
+### Read regioes
+
+GET {{host}}/regioes
+Authorization: bearer {{token}}
+
+### Create meliponicultor
+
+POST {{host}}/meliponicultores
+Content-Type: application/json
+
+{
+    "nome": "Luiz",
+    "email": "luiz@email.com",
+    "senha": "123",
+    "cpf": "1234",
+    "cidade": "João Pessoa",
+    "telefone": "83911112222"
+}
+
+### Valid Login
+
+# @name login
+POST {{host}}/signin
+Content-Type: application/json
+
+{
+    "email": "luiz@email.com",
+    "senha": "123"
+}
+
+### Invalid Login
+
+POST {{host}}/signin
+Content-Type: application/json
+
+{
+    "email": "fail@email.com",
+    "senha": "123"
+}
